@@ -32,7 +32,18 @@
     <body>
       <!-- Sidebar -->
       <!-- sidebar can be a header when design is responsive -->
-      <section id="sidebar"></section>
+      <section id="sidebar">
+        <div class="inner">
+          <nav>
+            <ul>
+              <li><a href="#intro">Welcome</a></li>
+              <li><a href="#one">About this site.</a></li>
+              <li><a href="#two">Portfolio and Experience</a></li>
+              <li><a href="#three">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
       <!-- Wrapper -->
       <div id="wrapper">
         <!-- intro -->
@@ -54,22 +65,64 @@
           </div>
         </section>
         <!-- one -->
-         <!-- portfolio -->
+        <!-- about this website -->
         <section id="one">
-          <div class="content"></div>
+          <div class="content">
+            <h2>About this site</h2>
+            <p>
+              The purpose of this website is to showcase my work experience and
+              my portfolio of my past projects. This website is to showcase my
+              current full stack abilities. It is built with vanilla HTML, CSS
+              and JS; with the aid of styling packages like SASS. Also, it's
+              connected to a backend written with Javascript which fetches the
+              data from a Mongo Database. Also, the same backend has its
+              administrator page that allows me to change the information on
+              this website at any given time.
+            </p>
+          </div>
         </section>
         <!-- two -->
         <section id="two">
-            <!-- resume and experiecne -->
-          <div class="inner"></div>
+          <!-- resume and experiecne -->
+          <div class="inner">
+            <h2>Experience and Portfolio</h2>
+            <p>
+              Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
+              turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.
+            </p>
+          </div>
         </section>
         <!-- three -->
         <section id="three">
-            <!-- get in touch -->
-          <div class="inner"></div>
+          <!-- get in touch -->
+          <div class="inner">
+            <!-- add a form that will allow to
+             send one way messages. -->
+            <h2>Contact and follow my media</h2>
+            <ul>
+              <li><a href="">LinkedIn:</a></li>
+              <li><a href="">Github:</a></li>
+              <li><a href="">email:</a></li>
+              <li><a href="">youtube:</a></li>
+              <li><a href="">resume:</a></li>
+            </ul>
+          </div>
         </section>
       </div>
       <!-- Footer -->
+      <footer id="footer">
+        <div>
+            <ul class="menu">
+                Marthel Rodriguez. All rights reserved.
+                <!-- you may add the square space icons
+                    -email
+                    -linkedin
+                    -github
+                    -youtube 
+                -->
+            </ul>
+        </div>
+      </footer>
       <!-- Scripts -->
     </body>
   </html>
