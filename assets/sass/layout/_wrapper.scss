@@ -1,0 +1,21 @@
+/*Wrapper (main)*/
+
+#wrapper {
+  background-color: skyblue;
+  #sidebar {
+    // margin-left
+    margin-left: 0;
+
+    //include breakpoint
+
+    //#inclu
+  }
+  #header {
+    background-color: aquamarine;
+    .wrapper {
+      .inner {
+        margin: 0 auto;
+      }
+    }
+  }
+}

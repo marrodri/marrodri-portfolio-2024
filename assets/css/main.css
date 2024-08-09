@@ -1,0 +1,13 @@
+/*Wrapper (main)*/
+#wrapper {
+  background-color: skyblue;
+}
+#wrapper #sidebar {
+  margin-left: 0;
+}
+#wrapper #header {
+  background-color: aquamarine;
+}
+#wrapper #header .wrapper .inner {
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */
