@@ -1,18 +1,22 @@
 /*Wrapper (main)*/
 
 #wrapper {
-  background-color: skyblue;
-  #sidebar {
-    // margin-left
+  background-color: rgb(27, 158, 206);
+  #sidebar + & {
+    margin-left: _size(sidebar-width);
+
+    // when the breakpoint is larger than usual
+    //default web screen
     margin-left: 0;
+    padding-top: _size(sidebar-height);
 
     //include breakpoint
 
     //#inclu
   }
-  #header {
+  #header + & {
     background-color: aquamarine;
-    .wrapper {
+    > .wrapper {
       .inner {
         margin: 0 auto;
       }

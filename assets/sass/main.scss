@@ -1,7 +1,12 @@
-//add imports
+@import 'libs/vars';
+@import 'libs/functions';
 
 
+// components, go first
+@import "components/wrapper";
 
-//Todo add break points.
 
-@import "layout/wrapper"
+//layout and ids for final
+
+@import "layout/wrapper";
+
