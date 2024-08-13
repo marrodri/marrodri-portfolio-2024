@@ -99,8 +99,12 @@ body.is-preload #sidebar nav nav ul li {
 }
 
 /*Wrapper (main)*/
-#wrapper {
+#sidebar + #wrapper {
   background-color: rgb(27, 158, 206);
+  margin-left: 18em;
+}
+#header + #wrapper > .wrapper > .inner {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */

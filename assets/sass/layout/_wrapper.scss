@@ -1,6 +1,23 @@
 /*Wrapper (main)*/
 
 #wrapper {
-  background-color: rgb(27, 158, 206);
-  
+  //TODO: id + & {}
+  #sidebar + & {
+    background-color: rgb(27, 158, 206);
+
+    margin-left: _size(sidebar-width);
+
+    //a break point is added for the screen is less
+    //than large, where the sidebar becomes a header.
+
+    // then another included breakpoint for smaller screens
+  }
+
+  #header + & {
+    > .wrapper {
+      > .inner {
+        margin: 0 auto;
+      }
+    }
+  }
 }
