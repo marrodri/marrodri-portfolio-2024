@@ -3,18 +3,5 @@
 /* Wrapper class*/
 
 .wrapper{
-    position: relative;
-
-    > .inner{
-        background-color: rgb(8, 208, 84);
-        // mixin
-        // @include padding(5em, 5em);
-        padding: 20em, 20em, 20em, 20em;
-
-        max-width: 100%;
-        // width: _size(inner-width);
-
-        // breakpoint 
-        // padding: 4em, 4em;
-    }
+    background-color: red;
 }

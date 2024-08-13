@@ -1,5 +1,6 @@
 @import 'libs/vars';
 @import 'libs/functions';
+@import 'libs/breakpoints';
 
 
 // components, go first
@@ -8,5 +9,7 @@
 
 //layout and ids for final
 
+@import "layout/sidebar";
 @import "layout/wrapper";
+
 
