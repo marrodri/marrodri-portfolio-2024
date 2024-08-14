@@ -1,0 +1,29 @@
+
+/*Footer*/
+
+
+#footer{
+    #sidebar + #wrapper + &{
+        margin-left: _size(sidebar-width);
+        background-color: royalblue;
+        //a breakpoint less than large screens.
+        //the margin-left is set to 0;
+    }
+
+    > .inner{
+        a{
+            // hover logic added
+        }
+
+        .menu{
+            font-size: 0.8em;
+            color: _palette(border);
+        }
+    }
+
+    #header + #wrapp + &{
+        > .inner{
+            margin: 0 auto;
+        }
+    }
+}
