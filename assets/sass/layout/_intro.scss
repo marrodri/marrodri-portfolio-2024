@@ -1,0 +1,29 @@
+
+/*Intro*/
+
+
+#intro {
+    background-color: aqua;
+    //add background image here.
+    //add background position.
+    //set the background to no repeat.
+    // and background size to 100% 100%
+
+    p{ //line 16 in the original file
+        font-size: 1.25em;
+
+        // it includes a breakpoint
+        // where it sets display: none
+        //for the medium screen size.
+
+        /**
+        ** another breakpoint for small screens
+        ** where the font-size: 1em;
+        */
+    }
+
+    //it includes another breakpoint here.
+    //background-attachment: scroll.
+
+    
+}

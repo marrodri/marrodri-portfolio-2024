@@ -107,4 +107,16 @@ body.is-preload #sidebar nav nav ul li {
   margin: 0 auto;
 }
 
+/*Intro*/
+#intro {
+  background-color: aqua;
+}
+#intro p {
+  font-size: 1.25em;
+  /**
+  ** another breakpoint for small screens
+  ** where the font-size: 1em;
+  */
+}
+
 /*# sourceMappingURL=main.css.map */
