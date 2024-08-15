@@ -1,6 +1,7 @@
 /*
 ** order of importing:
 ** 1. libs
+** 1.5 breakpoints.
 ** 2. base
 ** 3. components
 ** 4 and final. layout
@@ -8,6 +9,9 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/breakpoints';
+
+//Breakpoints @
+
 
 // then, base
 @import "base/reset";

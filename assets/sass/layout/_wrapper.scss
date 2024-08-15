@@ -7,10 +7,22 @@
 
     margin-left: _size(sidebar-width);
 
-    //a break point is added for the screen is less
-    //than large, where the sidebar becomes a header.
-
-    // then another included breakpoint for smaller screens
+    ///Breakpoints on the original file 
+    /// between 13 and 21.
+    
+    ///TODO: define a breakpoint for a screen that
+    /// is smaller than the regular small size.
+    // @include breakpoint-sm {
+    //   padding-top: 0;
+    // }
+    // @include breakpoint("md"){
+    //   margin-left: 0;
+    //   padding-top: _size(sidebar-height);
+    //   background-color: rgb(236, 239, 8);
+    // }
+    // @include breakpoint-md {
+      
+    // }
   }
 
   #header + & {

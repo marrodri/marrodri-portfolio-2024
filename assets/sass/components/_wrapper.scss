@@ -3,16 +3,37 @@
 /* Wrapper class*/
 
 .wrapper{
-    background-color: red;
     position: relative;
-
     > .inner{
         //include padding.
+        padding: 5em 5em 5em 5em;
         max-width: 100%;
         width: _size(inner-width);
 
-        //4 breakpoints for the smaller than large 
-        //screen. line: 18 to 25
+        ///3 breakpoints for 
+        /// the smaller than large 
+        /// review the original file.
+        /// lines: 18 to 25
+        // @include breakpoint-sm{
+        
+        // @include breakpoint("sm"){
+        //     padding: 3em 2em 3em 2em;
+        //     background-color: rgb(174, 215, 61);
+        // }
+
+        // @include breakpoint-md{
+        
+        // @include breakpoint("md"){
+        //     width: 100%;
+        //     background-color: rgb(61, 171, 215);
+        // }
+
+        // @include breakpoint-lg{
+        
+        // @include breakpoint("lg"){
+        //     padding: 4em 4em 4em 4em;
+        //     background-color: green;
+        // }
     }
 
     &.alt{
@@ -52,18 +73,36 @@
             height: 100vh;
         }
 
-        ///line 68: breakpoint <=large
-
-        /// line 76: breakpoint <= small
+        /// line on OG file: 76
+        ///  breakpoint <= small
+        // @include breakpoint-sm{
         
-        /// line 86 to 103: fade-up, again vendor
+        // @include breakpoint("sm"){
+        //     padding: 2em 0;
+        //     min-height: 0;
+        //     body.is-ie & {
+        //         height: auto;
+        //         background-color: red;
+        //     }
+        // }
+
+        ///line on OG file: 68
+        /// breakpoint <=large
+      
+        // @include breakpoint("lg"){
+        //     min-height: calc(100vh - 2.5em);
+        //     body.is-ie &{
+        //         height: calc(100vh - 2.5em);
+        //     }
+        // }
+    }
+
+    /// line 86 to 103: fade-up, again vendor
         /// line 105 to 122: fade-down
         
         /// line 124 to 138: fade
         ///     in this one there's vendor and duration.
         ///     and body is pre-load when inactive.
-    }
-
 
 
 }

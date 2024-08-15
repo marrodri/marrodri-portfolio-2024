@@ -18,134 +18,152 @@
 
   text-align: right;
 
-   /*
+  /*
    ** the sidebar width is 18em, 
    ** this is value is already defined 
    ** by the program and how its displayed.
    ** in the front end.
    */
-   @debug "calling _size for sidebar-width";
+  @debug "calling _size for sidebar-width";
   width: _size(sidebar-width);
   @debug "calling _misc for z-index-base";
   z-index: _misc(z-index-base);
 
-  > .inner{
+  > .inner {
     background-color: blueviolet;
 
     /**
     ** check what is this for?
     */
-    body.is-ie &{
-        background-color: yellow;
-        height: 100%;
+    body.is-ie & {
+      background-color: yellow;
+      height: 100%;
     }
   }
 
-  nav{
-    >ul{
-        list-style: none;
+  nav {
+    > ul {
+      list-style: none;
+      padding: 0;
+      > li {
+        //include the 2 vendors and review what
+        //its supposed to do.
+
+        margin: 1.5em 0 0 0;
+        //try other positions.
+        position: relative;
         padding: 0;
-        >li{
+        opacity: 1;
 
-            //include the 2 vendors and review what 
-            //its supposed to do.
+        &:first-child {
+          margin: 0;
+          background-color: teal;
+        }
 
-            margin: 1.5em 0 0 0;
-            //try other positions.
-            position: relative;
-            padding: 0;
-            opacity: 1;
-
-            &:first-child{
-                margin:0;
-                background-color: teal;
-            }
-            
-            /*
+        /*
             ** there is an iterator to add here
             ** its vendor, check with patience.
             */
+      }
+
+      // the a comes here.
+      a {
+        border: 0;
+        display: block;
+        color: black;
+        font-size: 0.6em;
+        font-weight: bold;
+        //letter spacing
+
+        line-height: 1.75;
+        outline: 0;
+        padding: 1.35em 0;
+        position: relative;
+
+        text-decoration: none; //removed the underline
+        text-transform: uppercase;
+
+        //what is before and after?
+        &:before,
+        &:after {
+          border-radius: 0.2em;
+          bottom: 0;
+          content: "";
+          height: 0.2em;
+          position: absolute;
+          right: 0;
+          width: 100%;
         }
 
-        // the a comes here.
-        a{
-            border: 0;
-            display: block;
-            color: black;
-            font-size: 0.6em;
-            font-weight: bold;
-            //letter spacing
-
-            line-height: 1.75;
-            outline: 0;
-            padding: 1.35em 0;
-            position: relative;
-            
-            
-            text-decoration: none; //removed the underline
-            text-transform: uppercase;
-
-            //what is before and after?
-            &:before,
-            &:after{
-                border-radius:0.2em;
-                bottom: 0;
-                content: '';
-                height: 0.2em;
-                position: absolute;
-                right: 0;
-                width:100%;
-            }
-
-            &:before{
-                //background function lighten.
-                //review calmly
-            }
-
-            &:after{
-                // check the vendors calmly what it does
-                max-width: 0;
-            }
-
-            &:hover{
-                color: blue;
-            }
-
-            &.active{
-                color:rgb(90, 31, 241);
-                //TODO: check max width
-                &:after{
-                    max-width: 100%;
-                }
-            }   
+        &:before {
+          //background function lighten.
+          //review calmly
         }
+
+        &:after {
+          // check the vendors calmly what it does
+          max-width: 0;
+        }
+
+        &:hover {
+          color: blue;
+        }
+
+        &.active {
+          color: rgb(90, 31, 241);
+          //TODO: check max width
+          &:after {
+            max-width: 100%;
+          }
+        }
+      }
     }
 
     //TODO: what is elem.obj & {}
     //looks like this is a setting before loading the
     //page
     body.is-preload & {
-        > .inner {
-            opacity:0;
-        }
+      > .inner {
+        opacity: 0;
+      }
 
-        nav{
-            ul{
-                li{
-                    //Todo: check vendor
-                    opacity: 0;
-                }
-            }
+      nav {
+        ul {
+          li {
+            //Todo: check vendor
+            opacity: 0;
+          }
         }
+      }
     }
+    //and it includes another breakpoint here.
+    // @include breakpoint-sm{
+    //     display: none;
+    // }
 
     //at this point it adds one long break point.
+    // @include breakpoint-sm {
+    
+    // @include breakpoint("sm") {
+    //   background-color: red;
+    //   height: _size(sidebar-height);
+    //   left: 0;
+    //   line-height: _size(sidebar-height);
+    //   overflow: hidden;
+    //   padding: 0;
+    //   text-align: center;
+    //   top: 0;
+    //   width: 100%;
 
+    //   > .inner{
+    //     height: inherit;
+    //     line-height: inherit;
+    //     //the vendor has a row and align-items strech
+    //     flex-direction: row;
+    //     align-items: stretch;
+    //   }
+    // }
 
-    //and it includes another breakpoint here.
     //from the original file check line 182.
-
   }
-
-
 }

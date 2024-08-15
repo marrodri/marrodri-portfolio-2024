@@ -1,23 +1,28 @@
+@mixin breakpoint($screen-size-query) {
+  $width: 0;
+  @debug "screen-size is: #{$screen-size-query}";
+  @if ($screen-size-query == "sm") {
+    width: #{$screen-sm-min};
+  } @else if ($screen-size-query "md") {
+    width: #{$screen-md-min};
+  } @else if ($screen-size-query == "lg") {
+    width: #{$screen-lg-min};
+  } @else {
+    width: #{$screen-xl-min};
+  }
+  @media (min-width: #{$width}) {
+    @content;
+  }
+}
 
-
-
-@mixin sm-breakpoint{
-    @media(min-width: #{$screen-sm-min}){
-        @content;
-    }
-}
-@mixin md-breakpoint{
-    @media(min-width: #{$screen-md-min}){
-        @content;
-    }
-}
-@mixin lg-breakpoint{
-    @media(min-width: #{$screen-lg-min}){
-        @content;
-    }
-}
-@mixin xl-breakpoint{
-    @media(min-width: #{$screen-xl-min}){
-        @content;
-    }
-}
+// @mixin breakpoint-sm {
+// }
+// @mixin breakpoint-md {
+// }
+// @mixin breakpoint-lg {
+//   @media (min-width: #{$screen-lg-min}) {
+//     @content;
+//   }
+// }
+// @mixin breakpoint-xl {
+// }
