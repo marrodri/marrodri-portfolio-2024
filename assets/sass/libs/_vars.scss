@@ -5,7 +5,21 @@ $misc: (
   max-sidebar-links: 20,
 );
 
+
+//Breakpoints
+//mobile screen landscape
+$screen-sm-min:576px;
+//tablet portrait
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+
 //Duration
+
+
 
 //Size
 $size: (

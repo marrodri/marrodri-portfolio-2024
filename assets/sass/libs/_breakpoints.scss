@@ -1,0 +1,23 @@
+
+
+
+@mixin sm-breakpoint{
+    @media(min-width: #{$screen-sm-min}){
+        @content;
+    }
+}
+@mixin md-breakpoint{
+    @media(min-width: #{$screen-md-min}){
+        @content;
+    }
+}
+@mixin lg-breakpoint{
+    @media(min-width: #{$screen-lg-min}){
+        @content;
+    }
+}
+@mixin xl-breakpoint{
+    @media(min-width: #{$screen-xl-min}){
+        @content;
+    }
+}
