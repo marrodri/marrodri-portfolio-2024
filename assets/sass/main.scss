@@ -5,21 +5,29 @@
 ** 3. components
 ** 4 and final. layout
 */
+
 @import 'libs/vars';
+@import "./fontawesome/fontawesome";
+@import './fontawesome/solid.scss';
+@import './fontawesome/brands.scss';
 @import 'libs/functions';
 @import 'libs/breakpoints';
 
+//then library
+
+
 // then, base
 @import "base/reset";
+@import "base/typography";
 // components, go first
 @import "components/wrapper";
 
 
 //layout and ids for final
-
 @import "layout/sidebar";
 @import "layout/wrapper";
 @import "layout/intro";
 @import "layout/footer";
 // @import "layout/header";
+
 

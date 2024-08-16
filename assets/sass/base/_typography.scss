@@ -1,0 +1,29 @@
+
+
+body, input, select, textarea {
+    color: _palette(fg);
+    font-family: _font(family);
+    font-size: 16.5pt;
+    font-weight: _font(weight);
+    line-height: 1.75;
+
+    a{
+        border-bottom: dotted 1px _palette(fg-light);
+		color: inherit;
+		text-decoration: none;
+    }
+    p{
+        color: black;
+    }
+    h1, h2, h3, h4, h5, h6 {
+		color: _palette(fg-bold);
+		font-weight: _font(weight-bold);
+		line-height: 1.5;
+		margin: 0 0 (_size(element-margin) * 0.25) 0;
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+}
